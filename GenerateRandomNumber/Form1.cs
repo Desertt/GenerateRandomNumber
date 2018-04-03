@@ -16,5 +16,34 @@ namespace GenerateRandomNumber
         {
             InitializeComponent();
         }
+
+        private void buttonGenerate_Click(object sender, EventArgs e)
+        {
+            int a, b;
+            a = 4;
+            b = 627;
+            int result;
+            Random rndNumber = new Random();
+            result = rndNumber.Next(a,b);
+            labelResult.Text = result.ToString();
+            labelResult.BackColor = Color.White;
+            timer1.Start();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Interval = 1000;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            labelResult.BackColor = Color.Red;
+        }
+
+        private void buttonGenerate_MouseHover(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
     }
 }
