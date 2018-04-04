@@ -16,7 +16,7 @@ namespace GenerateRandomNumber
         {
             InitializeComponent();
         }
-
+       
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             int a, b;
@@ -34,7 +34,10 @@ namespace GenerateRandomNumber
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Interval = 1000;
+            
         }
+
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
