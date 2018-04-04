@@ -20,8 +20,8 @@ namespace GenerateRandomNumber
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             int a, b;
-            a = 4;
-            b = 627;
+            a = 3;
+            b = 628;
             int result;
             Random rndNumber = new Random();
             result = rndNumber.Next(a,b);
